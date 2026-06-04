@@ -11,12 +11,12 @@ from supabase import create_client
 # Configuración de página
 st.set_page_config(
     page_title="Billetera Personal | Dashboard Financiero",
-    page_icon="📈",
+    page_icon="💰",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
 
-# ==================== CONFIGURACIÓN DE SUPABASE ====================
+# ==================== CONFIGURACIÓN DE SUPABASE (NUEVAS CREDENCIALES) ====================
 SUPABASE_URL = "https://eyrnidrglgktlxohpuyp.supabase.co"
 SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV5cm5pZHJnbGdrdGx4b2hwdXlwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA1OTU1MzMsImV4cCI6MjA5NjE3MTUzM30.lmsUIODUM-6o_ao2x5tHtlJb3_yMQ5NHWZMZMJQUwFs"
 
@@ -305,7 +305,7 @@ with col2:
     st.markdown(f"<p style='text-align: center;'>{mes_seleccionado} {año_actual} · {fecha_actual_str}</p>", unsafe_allow_html=True)
 st.divider()
 
-# ==================== TABS (PESTAÑAS) ====================
+# ==================== TABS ====================
 tab_movilidad, tab_gastos, tab_calendario, tab_resumen, tab_analisis, tab_ingresos, tab_configuracion, tab_exportar = st.tabs([
     "MOVILIDAD", "GASTOS", "CALENDARIO", "RESUMEN", "ANALISIS", "INGRESOS", "CONFIGURACION", "EXPORTAR"
 ])
